@@ -27,7 +27,7 @@ def test_get_pet(api_client):
     response = api_client.get("/pet/2222")
     assert response.status_code == 200
     assert response.json()['id'] == 2222
-    assert response.json()['name'] == 'bob'
+    assert response.json()['name'] == 'bobik'
 
 def test_update_pet(api_client):
     data = {
